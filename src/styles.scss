@@ -1,1 +1,101 @@
 /* You can add global styles to this file, and also import other style files */
+
+/* Define a root font size for scalability */
+:root {
+    --font-family-primary: 'Helvetica', sans-serif;
+    /* Use Material Design's default font */
+    --font-size-base: 16px;
+    /* Default font size */
+    --font-size-small: 14px;
+    /* Smaller text size */
+    --font-size-large: 18px;
+    /* Larger text size */
+    --font-color: #333;
+    /* Default text color */
+}
+
+/* Apply global font styles */
+body {
+    font-family: var(--font-family-primary);
+    font-size: var(--font-size-base);
+    color: var(--font-color);
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+    background-color: #f9f9f9;
+    /* Optional: Light background for better readability */
+}
+
+/* Headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--font-family-primary);
+    margin: 0 0 10px;
+    line-height: 1.2;
+}
+
+h1 {
+    font-size: 2rem;
+    /* Example: 32px */
+}
+
+h2 {
+    font-size: 1.75rem;
+    /* Example: 28px */
+}
+
+h3 {
+    font-size: 1.5rem;
+    /* Example: 24px */
+}
+
+h4 {
+    font-size: 1.25rem;
+    /* Example: 20px */
+}
+
+h5 {
+    font-size: 1rem;
+    /* Example: 16px */
+}
+
+h6 {
+    font-size: 0.875rem;
+    /* Example: 14px */
+}
+
+/* Links */
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Buttons */
+button {
+    font-family: var(--font-family-primary);
+    font-size: var(--font-size-base);
+}
+
+@media (max-width: 768px) {
+    :root {
+        --font-size-base: 14px;
+        --font-size-large: 16px;
+        --font-size-small: 12px;
+    }
+}
+
+@media (min-width: 1200px) {
+    :root {
+        --font-size-base: 18px;
+        --font-size-large: 20px;
+        --font-size-small: 16px;
+    }
+}

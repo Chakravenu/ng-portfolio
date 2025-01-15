@@ -1,0 +1,22 @@
+.resume-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+
+    .section-title {
+        font-size: 2rem;
+        font-weight: bold;
+        color: #0078d4;
+        margin-bottom: 20px;
+        text-transform: uppercase;
+        border-bottom: 2px solid #e0e0e0;
+        padding-bottom: 10px;
+    }
+
+    .resume-viewer {
+        border: 1px solid #e0e0e0;
+        border-radius: 5px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+}
